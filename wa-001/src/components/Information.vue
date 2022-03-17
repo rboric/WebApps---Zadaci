@@ -17,6 +17,11 @@ export default {
 </script>
 <style scoped>
 li {
+  padding: 4px;
   list-style-type: none;
+}
+
+ul {
+  margin-top: 20px;
 }
 </style>

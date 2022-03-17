@@ -13,6 +13,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
+    props: true,
 
     component: () => import('../views/About.vue')
   }

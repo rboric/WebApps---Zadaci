@@ -14,6 +14,7 @@ import axios from "axios";
 import Information from "../components/Information.vue";
 
 export default {
+  props: ["home"],
   components: { Information },
   name: "Home",
   data() {
@@ -57,6 +58,8 @@ li {
 }
 
 li a {
+  padding: 20px;
+  background-color: rgb(211, 211, 211);
   font-size: 20px;
   color: black;
   text-decoration: none;
