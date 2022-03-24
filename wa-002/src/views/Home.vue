@@ -52,7 +52,6 @@ export default {
           });
         })
         .catch((errors) => {
-          console.error(errors);
           alert("Name does not exist or contains strange letters.");
         });
     },
