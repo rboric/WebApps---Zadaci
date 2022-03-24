@@ -63,7 +63,7 @@ export default {
         {
           text: "Name",
           align: "start",
-          sortable: false,
+
           value: "name",
         },
         {
