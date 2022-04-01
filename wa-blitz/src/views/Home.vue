@@ -26,13 +26,19 @@ export default {
 </script>
 <style scoped>
 .home {
+  font-family: "Roboto", sans-serif;
   width: 50%;
   margin: auto;
   text-align: center;
 }
 
 ul {
+  font-size: 20px;
   list-style-type: none;
+}
+
+li b {
+  color: brown;
 }
 
 a {

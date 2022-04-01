@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/:naziv',
+    path: '/:url',
     name: 'About',
     component: () => import('../views/About.vue')
   }
