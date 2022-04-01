@@ -20,13 +20,19 @@ export default {
   methods: {
     getData() {
       axios
-        .get("http://ntankovic.unipu.hr:8000/books.json")
+        .get("https://www.anapioficeandfire.com/api/books")
         .then((response) => {
           response.data.forEach((books) => {
             this.info.push({
-              NAZIV: books.name,
-              AUTOR: books.authors[0],
-              DATUM: books.released,
+              url: books.url,
+              naziv: books.name,
+              autor: books.authors,
+              datum: books.released,
+              isbn: books.isbn,
+              brojstranica: books.numberOfPages,
+              izdavac: books.publisher,
+              zemlja: books.country,
+              brojlikova: books.characters.length,
             });
             console.log(this.info);
           });
